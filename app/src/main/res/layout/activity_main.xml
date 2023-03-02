@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+     <Button
+         android:id="@+id/qrgenerator"
+         android:text="QR generator"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/qrscanner"
+        android:text="QR scanner"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qrgenerator"/>
+</RelativeLayout>

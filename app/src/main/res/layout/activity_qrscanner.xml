@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRscanner">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="257dp"
+        android:layout_height="257dp"
+        android:layout_above="@id/scanbtn"
+        android:layout_below="@id/textbarcodevalue"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="356dp"/>
+
+    <TextView
+        android:id="@+id/textbarcodevalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="No bar code detected"
+
+        android:textSize="20dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scanner bar code"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:id="@+id/scanbtn"/>
+
+</RelativeLayout>
